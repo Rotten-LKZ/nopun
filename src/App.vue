@@ -145,26 +145,23 @@ function refresh(val: string) {
 
 <style lang="scss">
 #popup {
-  --width: 320px;
-  --height: 240px;
-
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 99;
-  // width: var(--width);
-  // height: var(--height);
   overflow: hidden;
-  background-color: #dadad0;
+  background-color: var(--book-bg-color);
   bottom: 0;
   right: 0;
 
   iframe {
-    width: var(--width);
-    height: var(--height);
+    width: 320px;
+    height: 240px;
   }
 }
 
 body {
+  --book-bg-color: #dadad0;
+
   margin: 0;
   padding: 0;
 }
@@ -178,7 +175,7 @@ body {
   font-size: 1.2rem;
   overflow-x: auto;
   writing-mode: vertical-rl;
-  background-color: #dadad0;
+  background-color: var(--book-bg-color);
   font-family: "Noto Serif SC", STZhongsong, Roboto, serif;
 }
 
