@@ -177,6 +177,9 @@ body {
   writing-mode: vertical-rl;
   background-color: var(--book-bg-color);
   font-family: "Noto Serif SC", STZhongsong, Roboto, serif;
+  text-decoration-line: underline;
+  text-underline-position: auto;
+  text-underline-offset: 1px;
 }
 
 .edit {
