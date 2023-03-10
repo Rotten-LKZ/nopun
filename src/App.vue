@@ -86,7 +86,7 @@ function refresh(val: string) {
       type="textarea"
       placeholder="输入原文"
       v-show="showTextInput"
-      style="height: 180px"
+      :rows="8"
     />
     
     <div class="test">
@@ -95,7 +95,7 @@ function refresh(val: string) {
           v-model:value="slashInput"
           type="textarea"
           placeholder="标点"
-          style="height: 240px"
+          :rows="8"
         />
         <div class="btns">
           <n-button type="info" @click="check">
